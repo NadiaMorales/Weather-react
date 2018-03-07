@@ -4,6 +4,7 @@ import CircularProgress from 'material-ui/CircularProgress';
 import Location from './Location';
 import WeatherData from './WeatherData';
 import transformWeather from './../../services/transformWeather';
+import './style.css'
 // import {
 // 		CLOUDY,
 // 		SUN,
@@ -92,7 +93,7 @@ class WeatherLocation extends Component{
 		const { onWeatherLocationClick } = this.props;
 		const {city, data} = this.state;
     return (
-     <div className='weatherDataCont' onClick={onWeatherLocationClick}>
+     <div className='weatherDataCont weatherLocations' onClick={onWeatherLocationClick}>
     	<Location city = {city}/>
 	   {data ? <WeatherData data = {data} /> : <CircularProgress size={60} thickness={7}/>}
        
