@@ -37,8 +37,8 @@ handlerSelectionLocation = city => {
       <MuiThemeProvider>
         <Grid>
           <Row>
-            <Col xs={12} md={6}>
-              <AppBar title='Belu'/>
+            <Col xs={12} md={12}>
+              <AppBar title='weather'/>
             </Col>
           </Row>
           <Row>
